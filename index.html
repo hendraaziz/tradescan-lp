@@ -27,7 +27,8 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            overflow: hidden;
+            overflow-x: hidden;
+            overflow-y: auto;
             background-image:
                 radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 40%),
                 radial-gradient(circle at 90% 80%, rgba(167, 139, 250, 0.08) 0%, transparent 40%);
@@ -36,8 +37,22 @@
         .hub-container {
             text-align: center;
             max-width: 600px;
-            padding: 2rem;
+            padding: 4rem 2rem;
             z-index: 10;
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 2rem;
+            }
+
+            h1 {
+                font-size: 1.2rem;
+            }
+
+            .promo-card {
+                padding: 1.5rem;
+            }
         }
 
         .logo {

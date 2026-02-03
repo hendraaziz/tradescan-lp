@@ -692,9 +692,17 @@ footer {
 
     .hero .container,
     .vision-wrapper,
+    .vision-image,
     .auto-log .log-content {
-        flex-direction: column;
+        flex-direction: column !important;
         text-align: center;
+    }
+
+    .hero-content,
+    .hero-image,
+    .vision-text,
+    .vision-image {
+        width: 100%;
     }
 
     .hero h1 {
@@ -713,5 +721,77 @@ footer {
 
     .pricing-card.featured {
         transform: none;
+    }
+}
+
+@media (max-width: 600px) {
+    nav .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        display: none;
+        /* Hide excessive links on mobile for higher conversion */
+    }
+
+    .nav-links.mobile-visible {
+        display: flex;
+    }
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .hero {
+        padding: 7rem 0 4rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+        letter-spacing: -1px;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .pricing-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .current {
+        font-size: 2.5rem;
+    }
+
+    .problem-item {
+        padding: 1.5rem;
+    }
+
+    .vision-text h2 {
+        font-size: 2rem;
+    }
+
+    .log-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .testimonial-carousel-container {
+        padding: 0 10px;
+    }
+
+    .carousel-nav button {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 }
