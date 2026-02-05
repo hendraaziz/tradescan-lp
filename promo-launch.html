@@ -10,6 +10,27 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style-promo.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        // TODO: Replace YOUR_PIXEL_ID with your actual Meta Pixel ID
+        fbq('init', 'YOUR_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 
 <body>
@@ -40,7 +61,7 @@
                     yang memetakan Order Block, FVG, dan Liquidity secara otomatis. Cukup <strong>Upload
                         Screenshot</strong>, dan biarkan AI kami yang bekerja.</p>
                 <div class="hero-btns">
-                    <a href="#pricing" class="btn-primary-lg">Saya Mau Profit Konsisten!</a>
+                    <a href="#pricing" class="btn-primary-lg">Saya Mau Trading Lebih Objektif!</a>
                     <a href="#problems" class="btn-secondary">Lihat Mengapa Anda Masih Loss</a>
                 </div>
                 <div class="social-proof-mini">
@@ -55,7 +76,7 @@
             </div>
             <div class="hero-image">
                 <img src="assets/images/dashboard.png" alt="TradeScan Dashboard">
-                <div class="floating-stat">Win Rate: 88.4%</div>
+                <div class="floating-stat">6 AI Model Consensus</div>
             </div>
         </div>
     </section>
@@ -96,7 +117,7 @@
                 <div class="problem-item">
                     <div class="p-icon">❌</div>
                     <h3>Buta Terhadap Evaluasi</h3>
-                    <p>Kebanyakan trader tidak punya catatan trading yang rapi. Tanpa data win rate yang jelas, Anda
+                    <p>Kebanyakan trader tidak punya catatan trading yang rapi. Tanpa data statistik yang jelas, Anda
                         hanya sedang berjudi, bukan membangun bisnis trading.</p>
                 </div>
                 <div class="problem-item">
@@ -138,7 +159,7 @@
         <div class="container">
             <div class="log-content">
                 <div class="log-text">
-                    <h2>Kuasai <span>Win Rate</span> Anda. <br>Hentikan Kebiasaan Berjudi.</h2>
+                    <h2>Kuasai <span>Jurnal Trading</span> Anda. <br>Hentikan Kebiasaan Berjudi.</h2>
                     <p>Masalah utama trader adalah tidak tahu di mana mereka salah. TradeScan secara otomatis mencatat
                         setiap sinyal dan evaluasi Anda ke dalam <strong>Trading Log</strong> yang canggih.</p>
                 </div>
@@ -146,7 +167,7 @@
                     <img src="assets/images/history.png" alt="Automated Trading Log">
                     <div class="log-labels">
                         <div class="label-item">✅ Sinyal Tercatat</div>
-                        <div class="label-item">✅ Win Rate Real-time</div>
+                        <div class="label-item">✅ Statistik Real-time</div>
                         <div class="label-item">✅ Evaluasi Per Trade</div>
                     </div>
                 </div>
@@ -158,13 +179,13 @@
     <section id="results" class="results-new">
         <div class="container">
             <div class="section-title">
-                <h2>Bukti Nyata <span>Profit Konsisten</span></h2>
+                <h2>Bukti Nyata <span>Analisa Terstruktur</span></h2>
                 <p>Bukan sekadar statistik di atas kertas. Inilah hasil nyata dari trader yang beralih ke analisa
-                    berbasis AI TradeScan.</p>
+                    objektif berbasis AI TradeScan.</p>
             </div>
             <div class="mt5-resume">
                 <div class="result-card-new full-width">
-                    <div class="card-header">📊 RESUME PROFIT (MT5) - REAL ACCOUNT</div>
+                    <div class="card-header">📊 CONTOH JURNAL TRADING - REAL ACCOUNT</div>
                     <div class="card-body">
                         <img src="assets/images/mt5_profit.png" alt="MetaTrader 5 Profit Summary">
                     </div>
@@ -265,7 +286,9 @@
                         <li>Telegram Notifications</li>
                         <li>Support Email</li>
                     </ul>
-                    <a href="https://app.tradescan.id/auth/register" class="btn-outline">Daftar Basic</a>
+                    <a href="https://app.tradescan.id/auth/register"
+                        onclick="fbq('track', 'Lead', {content_name: 'Basic Plan', content_category: 'Pricing'});"
+                        class="btn-outline">Daftar Basic</a>
                 </div>
                 <!-- Elite (Featured) -->
                 <div class="pricing-card featured">
@@ -285,7 +308,9 @@
                         <li>API Access & Dedicated Support</li>
                         <li>Export CSV & PDF</li>
                     </ul>
-                    <a href="https://app.tradescan.id/auth/register" class="btn-primary-lg">Dapatkan Slot Elite</a>
+                    <a href="https://app.tradescan.id/auth/register"
+                        onclick="fbq('track', 'Lead', {content_name: 'Elite Plan', content_category: 'Pricing'});"
+                        class="btn-primary-lg">Dapatkan Slot Elite</a>
                 </div>
                 <!-- Pro -->
                 <div class="pricing-card">
@@ -304,7 +329,9 @@
                         <li>Advanced ICT/SMC Mapping</li>
                         <li>Export CSV</li>
                     </ul>
-                    <a href="https://app.tradescan.id/auth/register" class="btn-outline">Daftar Pro</a>
+                    <a href="https://app.tradescan.id/auth/register"
+                        onclick="fbq('track', 'Lead', {content_name: 'Pro Plan', content_category: 'Pricing'});"
+                        class="btn-outline">Daftar Pro</a>
                 </div>
             </div>
             <div class="guarantee">
